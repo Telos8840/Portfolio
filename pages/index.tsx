@@ -1,9 +1,15 @@
 import { Title, Text, Anchor } from '@mantine/core';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import Script from 'next/script';
+import Hero from '@components/Hero';
+import ColorSchemeToggle from '@components/ColorSchemeToggle';
 
 export default function HomePage() {
   return (
     <>
+      <Script
+        src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+        strategy="beforeInteractive"
+      />
       <Title sx={{ fontSize: 100, fontWeight: 900, letterSpacing: -2 }} align="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span">
@@ -19,6 +25,7 @@ export default function HomePage() {
         . To get started edit index.tsx file.
       </Text>
       <ColorSchemeToggle />
+      <Hero />
     </>
   );
 }
