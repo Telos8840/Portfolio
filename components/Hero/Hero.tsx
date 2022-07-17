@@ -36,16 +36,16 @@ export const Hero = () => {
               website.
             </Text>
 
-            <Button
-              variant="gradient"
-              gradient={buttonGradient}
-              size="xl"
-              className={classes.button}
-              mt={40}
-              rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}
-            >
-              More About Me
-            </Button>
+            {/*<Button*/}
+            {/*  variant="gradient"*/}
+            {/*  gradient={buttonGradient}*/}
+            {/*  size="xl"*/}
+            {/*  className={classes.button}*/}
+            {/*  mt={40}*/}
+            {/*  rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}*/}
+            {/*>*/}
+            {/*  More About Me*/}
+            {/*</Button>*/}
           </div>
         </div>
       </Container>
