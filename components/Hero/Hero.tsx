@@ -1,120 +1,54 @@
-import {
-  createStyles,
-  Container,
-  Title,
-  Button,
-  Group,
-  Text,
-  List,
-  ThemeIcon,
-} from '@mantine/core';
-import { Check } from 'tabler-icons-react';
-import Particles from '@components/Particles';
+import { Container, Title, Text, Button, Anchor } from '@mantine/core';
+import { ArrowNarrowDown } from 'tabler-icons-react';
+import { useMediaQuery } from '@mantine/hooks';
+import useStyles from './Hero.styles';
 
-const useStyles = createStyles((theme) => ({
-  inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    paddingTop: theme.spacing.xl * 4,
-    paddingBottom: theme.spacing.xl * 4,
-  },
-
-  content: {
-    maxWidth: 480,
-    marginRight: theme.spacing.xl * 3,
-
-    [theme.fn.smallerThan('md')]: {
-      maxWidth: '100%',
-      marginRight: 0,
-    },
-  },
-
-  title: {
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontSize: 44,
-    lineHeight: 1.2,
-    fontWeight: 900,
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
-    },
-  },
-
-  control: {
-    [theme.fn.smallerThan('xs')]: {
-      flex: 1,
-    },
-  },
-
-  particleWrapper: {
-    position: 'relative',
-    width: 600,
-    height: 600,
-  },
-
-  highlight: {
-    position: 'relative',
-    backgroundColor:
-      theme.colorScheme === 'dark'
-        ? theme.fn.rgba(theme.colors[theme.primaryColor][6], 0.55)
-        : theme.colors[theme.primaryColor][0],
-    borderRadius: theme.radius.sm,
-    padding: '4px 12px',
-  },
-}));
-
-export function Hero() {
+export const Hero = () => {
   const { classes } = useStyles();
+  const mobileScreen = useMediaQuery('(max-width: 768px)');
+
+  const textGradient = mobileScreen
+    ? { from: 'red', to: 'yellow', deg: 45 }
+    : { from: 'indigo', to: 'green', deg: 45 };
+
+  const buttonGradient = mobileScreen
+    ? { from: 'indigo', to: 'green', deg: 45 }
+    : { from: 'red', to: 'yellow', deg: 45 };
 
   return (
-    <Container>
-      <div className={classes.inner}>
-        <div className={classes.content}>
-          <Title className={classes.title}>
-            A <span className={classes.highlight}>modern</span> React <br /> components library
-          </Title>
-          <Text color="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
-          </Text>
+    <div className={classes.root}>
+      <Container size="lg" className={classes.container}>
+        <div className={classes.inner}>
+          <div className={classes.content}>
+            <Title className={classes.title}>
+              Hey! My name is{' '}
+              <Text component="span" inherit variant="gradient" gradient={textGradient}>
+                Saul Guardado
+              </Text>{' '}
+            </Title>
 
-          <List
-            mt={30}
-            spacing="sm"
-            size="sm"
-            icon={
-              <ThemeIcon size={20} radius="xl">
-                <Check size={12} />
-              </ThemeIcon>
-            }
-          >
-            <List.Item>
-              <b>TypeScript based</b> – build type safe applications, all components and hooks
-              export types
-            </List.Item>
-            <List.Item>
-              <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-              any project
-            </List.Item>
-            <List.Item>
-              <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-              keyboard
-            </List.Item>
-          </List>
+            <Text className={classes.description} mt={30} size="lg">
+              I&apos;m a Senior Software Engineer specializing in building consumer facing products.
+              I&apos;m currently working on the redesigned
+              <Anchor className={classes.link} href="https:www.fxnetworks.com" target="_blank">
+                FX Networks
+              </Anchor>
+              website.
+            </Text>
 
-          <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
-              Get started
+            <Button
+              variant="gradient"
+              gradient={buttonGradient}
+              size="xl"
+              className={classes.button}
+              mt={40}
+              rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}
+            >
+              More About Me
             </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
-              Source code
-            </Button>
-          </Group>
+          </div>
         </div>
-        <Particles />
-        {/*<Image src={image.src} className={classes.image} />*/}
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
-}
+};
