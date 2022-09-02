@@ -30,22 +30,22 @@ export const Hero = () => {
             <Text className={classes.description} mt={30} size="lg">
               I&apos;m a Senior Software Engineer specializing in building consumer facing products.
               I&apos;m currently working on the redesigned
-              <Anchor className={classes.link} href="https:www.fxnetworks.com" target="_blank">
+              <Anchor className={classes.link} href="https://www.fxnetworks.com" target="_blank">
                 FX Networks
               </Anchor>
               website.
             </Text>
 
-            {/*<Button*/}
-            {/*  variant="gradient"*/}
-            {/*  gradient={buttonGradient}*/}
-            {/*  size="xl"*/}
-            {/*  className={classes.button}*/}
-            {/*  mt={40}*/}
-            {/*  rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}*/}
-            {/*>*/}
-            {/*  More About Me*/}
-            {/*</Button>*/}
+            <Button
+              variant="gradient"
+              gradient={buttonGradient}
+              size="xl"
+              className={classes.button}
+              mt={40}
+              rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}
+            >
+              More About Me
+            </Button>
           </div>
         </div>
       </Container>
