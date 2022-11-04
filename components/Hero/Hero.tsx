@@ -1,5 +1,5 @@
 import { Container, Title, Text, Button, Anchor } from '@mantine/core';
-import { ArrowNarrowDown } from 'tabler-icons-react';
+import { IconArrowNarrowDown } from '@tabler/icons';
 import { useMediaQuery } from '@mantine/hooks';
 import useStyles from './Hero.styles';
 
@@ -42,7 +42,7 @@ export const Hero = () => {
               size="xl"
               className={classes.button}
               mt={40}
-              rightIcon={<ArrowNarrowDown size={30} strokeWidth={2} />}
+              rightIcon={<IconArrowNarrowDown size={30} strokeWidth={2} />}
             >
               More About Me
             </Button>
