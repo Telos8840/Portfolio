@@ -1,8 +1,10 @@
-import { Container, Divider, Grid, Image, Text, Title, Anchor } from '@mantine/core';
-import useStyles from './AboutMe.styles';
+import { Divider, Grid, Group, Image, Text, Title } from '@mantine/core';
+import { motion } from 'framer-motion';
+import { IconChevronsRight } from '@tabler/icons';
+import useStyles, { AboutMeContainer, Link, TechGrid } from './AboutMe.styles';
 
 export const AboutMe = () => {
-  const { classes } = useStyles();
+  const { classes, theme } = useStyles();
 
   const getNumOfYears = () => {
     const date1 = new Date('July 1, 2012');
@@ -15,45 +17,79 @@ export const AboutMe = () => {
             with all the latest tech. This inquisitiveness has fueled my passion for Software over
             the past ${getNumOfYears()} years`;
 
+  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
+
   return (
-    <Container className={classes.container} size="md">
-      <Grid gutter="lg">
-        <Grid.Col span={5}>
-          <Image
-            width={350}
-            height="100%"
-            radius="md"
-            fit="contain"
-            src="./images/profile_pic.png"
-          />
+    <AboutMeContainer id="about-me" size="md">
+      <Grid gutter="lg" align="center">
+        <Grid.Col xs={12} sm={4} md={5}>
+          <motion.div
+            initial={{
+              x: -200,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1.2,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className={classes.portfolioPic}
+          >
+            <Image radius="lg" src="./images/profile_pic.png" alt="Saul Guardado Profile Picture" />
+          </motion.div>
         </Grid.Col>
-        <Grid.Col span={7}>
-          <Title order={2}>
-            <Text
-              variant="gradient"
-              gradient={{ from: 'cyan', to: 'lime', deg: 75 }}
-              inherit
-              component="span"
-            >
-              About Me
+        <Grid.Col xs={12} sm={8} md={7}>
+          <motion.div
+            initial={{
+              x: 200,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 1.2,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <Title order={2}>
+              <Text
+                variant="gradient"
+                gradient={{ from: 'cyan', to: 'lime', deg: 75 }}
+                inherit
+                component="span"
+              >
+                About Me
+              </Text>
+            </Title>
+            <Divider my="sm" size="sm" />
+            <Text size="lg">{aboutMeText}</Text>
+            <Text size="lg" mt="sm">
+              I&apos;ve worked on many projects ranging from small start-ups, to volunteering for
+              non-profits, all the way through large consumer facing applications for major sports,
+              news, and entertainment companies.
             </Text>
-          </Title>
-          <Divider my="sm" size="sm" />
-          <Text size="lg">{aboutMeText}</Text>
-          <Text size="lg" mt="sm">
-            I&apos;ve worked on many projects ranging from small start-ups, to volunteering for
-            non-profits, all the way through building applications for major sports, news, and
-            entertainment companies.
-          </Text>
-          <Text size="lg" mt="sm">
-            These days, I&apos;m leading the redesign of the
-            <Anchor className={classes.link} href="https://www.fxnetworks.com" target="_blank">
-              FX Networks
-            </Anchor>
-            rebuild.
-          </Text>
+            <Text size="lg" mt="sm">
+              At the moment, I&apos;m leading the re-architectured redesign of the
+              <Link href="https://www.fxnetworks.com" target="_blank">
+                FX Networks
+              </Link>
+              rebuild.
+            </Text>
+            <Text size="lg" mt="sm">
+              These a few things I&apos;ve been enjoying working with lately:
+            </Text>
+            <TechGrid cols={2} spacing="xs">
+              {frameworks.map((framework) => (
+                <Group key={framework} noWrap spacing={5}>
+                  <IconChevronsRight stroke={1.5} size={16} color={theme.colors.lime[6]} />
+                  <Text size="sm" color="dimmed">
+                    {framework}
+                  </Text>
+                </Group>
+              ))}
+            </TechGrid>
+          </motion.div>
         </Grid.Col>
       </Grid>
-    </Container>
+    </AboutMeContainer>
   );
 };
