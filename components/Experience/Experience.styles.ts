@@ -1,4 +1,4 @@
-import { Stack } from '@mantine/core';
+import { createStyles, Stack } from '@mantine/core';
 import styled from '@emotion/styled';
 
 export const ExperienceContainer = styled('section')`
@@ -13,3 +13,15 @@ export const Panel = styled(Stack)`
   margin-left: 16px;
   gap: 0;
 `;
+
+const useStyles = createStyles((theme) => ({
+  tabList: {
+    [theme.fn.smallerThan('xs')]: {
+      flexWrap: 'nowrap',
+      overflowX: 'auto',
+      marginBottom: 24,
+    },
+  },
+}));
+
+export default useStyles;

@@ -1,11 +1,15 @@
-import { Divider, Text, Title, Tabs, List } from '@mantine/core';
+import { useMantineTheme, Divider, Text, Title, Tabs, List } from '@mantine/core';
 import { IconChevronsRight } from '@tabler/icons';
 import { motion } from 'framer-motion';
 import data from '@content/experience.json';
-import { ExperienceContainer, Panel } from './Experience.styles';
+import { useMediaQuery } from '@mantine/hooks';
+import useStyles, { ExperienceContainer, Panel } from './Experience.styles';
 
 export const Experience = () => {
   const { experience } = data;
+  const { classes } = useStyles();
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.xs}px)`);
 
   const formatString = (str: string) => str.toLowerCase().replace(/\s/g, '');
 
@@ -33,8 +37,12 @@ export const Experience = () => {
           </Text>
         </Title>
         <Divider my="sm" size="sm" />
-        <Tabs defaultValue={formatString(experience[0].company)} orientation="vertical" mt="xl">
-          <Tabs.List>
+        <Tabs
+          defaultValue={formatString(experience[0].company)}
+          orientation={isMobile ? 'horizontal' : 'vertical'}
+          mt="xl"
+        >
+          <Tabs.List className={classes.tabList}>
             {experience.map((job) => (
               <Tabs.Tab key={job.company} value={formatString(job.company)}>
                 {job.company}

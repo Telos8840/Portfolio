@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
 export const AboutMeContainer = styled.section`
+  overflow: hidden;
   margin: 100px auto;
 `;
 
