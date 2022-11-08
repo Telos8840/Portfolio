@@ -20,7 +20,7 @@ export const AboutMe = () => {
   const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
 
   return (
-    <AboutMeContainer id="about-me" size="md">
+    <AboutMeContainer id="about-me">
       <Grid gutter="lg" align="center">
         <Grid.Col xs={12} sm={4} md={5}>
           <motion.div

@@ -1,8 +1,8 @@
-import { Anchor, AnchorProps, Container, createStyles, SimpleGrid } from '@mantine/core';
+import { Anchor, AnchorProps, createStyles, SimpleGrid } from '@mantine/core';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-export const AboutMeContainer = styled(Container)`
+export const AboutMeContainer = styled.section`
   margin: 100px auto;
 `;
 
@@ -11,9 +11,16 @@ interface LinkProps extends AnchorProps {
   target?: string;
 }
 
-export const Link = styled(Anchor)<LinkProps>`
-  margin: 0 6px;
-`;
+export const Link = styled(Anchor)<LinkProps>(
+  ({ theme }) => css`
+    margin: 0 6px;
+    color: ${theme.colors.lime[6]};
+
+    &:visited {
+      color: ${theme.colors.lime[9]};
+    }
+  `
+);
 
 export const TechGrid = styled(SimpleGrid)(
   ({ theme }) => css`

@@ -1,0 +1,103 @@
+{
+  "experience": [
+    {
+      "company": "FX Networks",
+      "title": "Senior Software Engineer",
+      "isDWS": true,
+      "website": "https://www.fxnetworks.com/",
+      "startDate": "July 2021",
+      "endDate": "Present",
+      "highlights": [
+        "Architected the redesign of the new site and CMS using NextJS, TypeScript, Styled-Components, Material UI, Akamai Amp Video Player, and GraphQL",
+        "Led the team in developing all new high-performant and reusable components using the Atomic Design methodology",
+        "Created sleek intuitive UI translated from product specifications and Figma designs",
+        "Noteworthy achievements: Infinite Scrolling Homepage Carousel and Music Player that were developed from the ground up",
+        "Managed release deployments every week and maintained all environments by implementing pre-commit hooks to run typechecks and linting while also integrating with GitHub Workflows to run unit tests on Pull Request creation",
+        "Created unit and E2E tests using React Testing Library, Jest, and Cypress"
+      ]
+    },
+    {
+      "company": "Fox",
+      "title": "Senior Software Engineer",
+      "isDWS": true,
+      "website": "https://www.fox.com/",
+      "startDate": "November 2017",
+      "endDate": "July 2021",
+      "highlights": [
+        "Built and maintained redesigned website using React and Redux",
+        "Integrated with cable providers to give users access to watch, favorite, and save any given TV show, series, and movie",
+        "Enhanced payment gateway to incorporate Apple Pay and Google Pay to securely activate subscriptions and pay for Pay Per View content",
+        "Scaffolded several unique landing pages to advertise and consume payments for every new Boxing, Wrestling, and MMA event",
+        "Created unit tests using Jest"
+      ]
+    },
+    {
+      "company": "Collide",
+      "title": "Lead Full-Stack Engineer",
+      "isDWS": false,
+      "website": "https://www.collide.com/",
+      "startDate": "March 2017",
+      "endDate": "October 2017",
+      "highlights": [
+        "Led the development and adoption of a React web app that leveraged libraries such as Redux Saga, Redux Persist, Redux Form, and React Player",
+        "Maintained legacy backend using Node, PHP and MySQL",
+        "Worked on live streaming platform that ingested an HLS stream to allow users to stream live content from creators",
+        "Maintained custom Chat script that allowed users to interact with content creators and send gifts"
+      ]
+    },
+    {
+      "company": "LegalZoom",
+      "title": "Lead Full-Stack Engineer",
+      "isDWS": false,
+      "website": "https://www.legalzoom.com/",
+      "startDate": "July 2016",
+      "endDate": "March 2017",
+      "highlights": [
+        "Leveraged strong, objective judgement in order to weigh the right frameworks and technologies to architect several rapid prototypes to measure product interest from daily active users",
+        "Engineered reusable project template through a custom CLI tool that quickly scaffolded projects with HandlebarsJS, Node, Express, MongoDB, SendGrid email service, and Stripe payment gateway",
+        "Created custom CMS using React Relax in order to build product pages quickly"
+      ]
+    },
+    {
+      "company": "ScoreBig",
+      "title": "Software Engineer III",
+      "isDWS": false,
+      "website": "https://www.scorebig.com/",
+      "startDate": "July 2016",
+      "endDate": "March 2017",
+      "highlights": [
+        "Contributed to full-stack .NET projects, with an emphasis on front-end features, cross-browser compatibility, and automated services",
+        "Maintained and added new features to in-house deployment automator by creating new services to flush remote caches, migrate databases, stage releases, and run regression testing",
+        "Assisted in development of back end features including generating SQL queries",
+        "Created functional automated tests using CasperJS and PhantomJS to ensure new features work properly"
+      ]
+    },
+    {
+      "company": "Internet Brands",
+      "title": "Software Engineer",
+      "isDWS": false,
+      "website": "https://www.internetbrands.com/",
+      "startDate": "November 2014",
+      "endDate": "February 2015",
+      "highlights": [
+        "Worked closely with product teams to develop new features and frameworks for high-traffic websites",
+        "Leveraging frameworks such as AngularJS and Yii to build asynchronous, responsive, high-performance pages to create a better user experience",
+        "Creating RESTful APIs using PHP to securely manage JSON data"
+      ]
+    },
+    {
+      "company": "Reality Check Systems",
+      "title": "Software Engineer",
+      "isDWS": false,
+      "website": "https://www.realitychecksystems.com/",
+      "startDate": "March 2013",
+      "endDate": "September 2014",
+      "highlights": [
+        "Developed front-end applications in .NET for broadcast networks such as NFL Network, DirecTV, MLB Network, CBS, and Golf Channel",
+        "Built .NET desktop applications following MVVM design patterns",
+        "Construct web services using Razor while following MVC design patterns for clients to create show segments to go live on-air",
+        "Create dynamic asynchronous web pages using jQuery, KnockoutJS, and AngularJS"
+      ]
+    }
+  ]
+}
