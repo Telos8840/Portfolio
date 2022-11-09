@@ -15,7 +15,7 @@ export const AboutMe = () => {
   const aboutMeText = `I've been a curiosity-driven person since childhood and always wanted to learn how
             things work. To this day, I still enjoy learning about new topics and keeping up to date
             with all the latest tech. This inquisitiveness has fueled my passion for Software over
-            the past ${getNumOfYears()} years`;
+            the past ${getNumOfYears()} years.`;
 
   const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
 
@@ -81,9 +81,7 @@ export const AboutMe = () => {
               {frameworks.map((framework) => (
                 <Group key={framework} noWrap spacing={5}>
                   <IconChevronsRight stroke={1.5} size={16} color={theme.colors.lime[6]} />
-                  <Text size="sm" color="dimmed">
-                    {framework}
-                  </Text>
+                  <Text size="sm">{framework}</Text>
                 </Group>
               ))}
             </TechGrid>
