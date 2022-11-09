@@ -16,7 +16,7 @@ export const Hero = () => {
     : { from: 'red', to: 'yellow', deg: 45 };
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container size="lg" className={classes.container}>
         <div className={classes.inner}>
           <div className={classes.content}>
@@ -49,6 +49,6 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
