@@ -73,10 +73,10 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             </Text>
             <Text size="lg" mt="sm">
               At the moment, I&apos;m leading the re-architectured redesign of the
-              <Link href="https://www.fxnetworks.com" target="_blank">
+              <Link href="https://www.fxnetworks.com" target="_blank" rel="noopener">
                 FX Networks
               </Link>
-              rebuild.
+              website.
             </Text>
             <Text size="lg" mt="sm">
               These a few things I&apos;ve been enjoying working with lately:

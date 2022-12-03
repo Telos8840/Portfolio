@@ -14,8 +14,8 @@ export const HomePage = () => {
   const links = [
     { link: '#about-me', label: 'About Me', scrollFunction: scrollToAbout },
     { link: '#experience', label: 'Experience', scrollFunction: scrollToExperience },
-    { link: '#projects', label: 'Projects', scrollFunction: () => {} },
-    { link: '#contact', label: 'Contact', scrollFunction: () => {} },
+    // { link: '#projects', label: 'Projects', scrollFunction: () => {} },
+    // { link: '#contact', label: 'Contact', scrollFunction: () => {} },
   ];
 
   return (

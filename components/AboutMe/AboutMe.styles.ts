@@ -10,6 +10,7 @@ export const AboutMeContainer = styled.section`
 interface LinkProps extends AnchorProps {
   href: string;
   target?: string;
+  rel?: string;
 }
 
 export const Link = styled(Anchor)<LinkProps>(
