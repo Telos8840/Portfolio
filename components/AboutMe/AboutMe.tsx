@@ -1,9 +1,13 @@
+import { MutableRefObject } from 'react';
 import { Divider, Grid, Group, Image, Text, Title } from '@mantine/core';
 import { motion } from 'framer-motion';
 import { IconChevronsRight } from '@tabler/icons';
 import useStyles, { AboutMeContainer, Link, TechGrid } from './AboutMe.styles';
 
-export const AboutMe = () => {
+interface AboutMeProps {
+  aboutRef: MutableRefObject<HTMLElement>;
+}
+export const AboutMe = ({ aboutRef }: AboutMeProps) => {
   const { classes, theme } = useStyles();
 
   const getNumOfYears = () => {
@@ -20,7 +24,7 @@ export const AboutMe = () => {
   const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
 
   return (
-    <AboutMeContainer id="about-me">
+    <AboutMeContainer id="about-me" ref={aboutRef}>
       <Grid gutter="lg" align="center">
         <Grid.Col xs={12} sm={4} md={5}>
           <motion.div
