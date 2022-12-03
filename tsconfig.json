@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],
+      "@content/*": ["content/*"],
     },
     "lib": [
       "dom",
@@ -25,6 +26,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "emotion.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

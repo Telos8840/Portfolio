@@ -32,12 +32,6 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  image: {
-    [theme.fn.smallerThan('md')]: {
-      display: 'none',
-    },
-  },
-
   content: {
     paddingTop: theme.spacing.xl * 2,
     paddingBottom: theme.spacing.xl * 2,
@@ -63,29 +57,15 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  description: {
-    color: theme.white,
-    opacity: 0.75,
-    maxWidth: 450,
-
-    [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
-    },
+  name: {
+    display: 'block',
   },
 
-  link: {
-    margin: '0 6px',
-    fontSize: 18,
-  },
-
-  button: {
-    paddingLeft: 50,
-    paddingRight: 50,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontSize: 22,
+  typewriter: {
+    fontSize: 40,
 
     [theme.fn.smallerThan('sm')]: {
-      width: '100%',
+      fontSize: 22,
     },
   },
 }));
