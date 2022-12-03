@@ -1,3 +1,4 @@
+import { MutableRefObject } from 'react';
 import { useMantineTheme, Divider, Text, Title, Tabs, List } from '@mantine/core';
 import { IconChevronsRight } from '@tabler/icons';
 import { motion } from 'framer-motion';
@@ -5,7 +6,11 @@ import data from '@content/experience.json';
 import { useMediaQuery } from '@mantine/hooks';
 import useStyles, { ExperienceContainer, Panel } from './Experience.styles';
 
-export const Experience = () => {
+interface ExperienceProps {
+  experienceRef: MutableRefObject<HTMLElement>;
+}
+
+export const Experience = ({ experienceRef }: ExperienceProps) => {
   const { experience } = data;
   const { classes } = useStyles();
   const theme = useMantineTheme();
@@ -14,7 +19,7 @@ export const Experience = () => {
   const formatString = (str: string) => str.toLowerCase().replace(/\s/g, '');
 
   return (
-    <ExperienceContainer id="experience">
+    <ExperienceContainer id="experience" ref={experienceRef}>
       <motion.div
         initial={{
           y: -100,
