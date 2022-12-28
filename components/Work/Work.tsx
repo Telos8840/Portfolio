@@ -50,41 +50,53 @@ export const Work = ({ workRef }: WorkProps) => {
 
   return (
     <WorkContainer id="Work" ref={workRef}>
-      <Title order={2}>
-        <Text
-          variant="gradient"
-          gradient={{ from: 'indigo.9', to: 'violet.2', deg: 75 }}
-          inherit
-          component="span"
-        >
-          Work
-        </Text>
-      </Title>
-      <Divider my="sm" size="sm" />
-      <Carousel
-        className={classes.carousel}
-        slideSize="50%"
-        align="start"
-        slideGap="xl"
-        controlsOffset="xs"
-        withControls={false}
-        getEmblaApi={setEmbla}
-        dragFree
-        breakpoints={[
-          { maxWidth: 'md', slideSize: '60%' },
-          { maxWidth: 'sm', slideSize: '100%' },
-        ]}
+      <motion.div
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.0,
+        }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
-        {slides}
-      </Carousel>
-      <Progress
-        color="indigo.4"
-        value={scrollProgress}
-        styles={{ bar: { transitionDuration: '0ms' }, root: { maxWidth: 320 } }}
-        size="sm"
-        mt="xl"
-        mx="auto"
-      />
+        <Title order={2}>
+          <Text
+            variant="gradient"
+            gradient={{ from: 'indigo.9', to: 'violet.2', deg: 75 }}
+            inherit
+            component="span"
+          >
+            Work
+          </Text>
+        </Title>
+        <Divider my="sm" size="sm" />
+        <Carousel
+          className={classes.carousel}
+          slideSize="50%"
+          align="start"
+          slideGap="xl"
+          controlsOffset="xs"
+          withControls={false}
+          getEmblaApi={setEmbla}
+          dragFree
+          breakpoints={[
+            { maxWidth: 'md', slideSize: '60%' },
+            { maxWidth: 'sm', slideSize: '100%' },
+          ]}
+        >
+          {slides}
+        </Carousel>
+        <Progress
+          color="indigo.4"
+          value={scrollProgress}
+          styles={{ bar: { transitionDuration: '0ms' }, root: { maxWidth: 320 } }}
+          size="sm"
+          mt="xl"
+          mx="auto"
+        />
+      </motion.div>
     </WorkContainer>
   );
 };

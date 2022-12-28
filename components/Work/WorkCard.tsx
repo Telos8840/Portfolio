@@ -3,7 +3,7 @@ import { Card, Image, Text, Group, Badge, ActionIcon } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons';
 import useStyles from './Work.styles';
 
-interface ProjectCardProps {
+interface WorkCardProps {
   image: string;
   title: string;
   link: string;
@@ -11,7 +11,7 @@ interface ProjectCardProps {
   badges: string[];
 }
 
-const WorkCard = ({ image, title, link, description, badges }: ProjectCardProps) => {
+const WorkCard = ({ image, title, link, description, badges }: WorkCardProps) => {
   const { classes, theme } = useStyles();
   const [cursorDown, setCursorDown] = useState<boolean>(false);
 
