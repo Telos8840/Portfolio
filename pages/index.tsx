@@ -5,6 +5,7 @@ import Hero from '@components/Hero';
 import AboutMe from '@components/AboutMe';
 import Experience from '@components/Experience';
 import Work from '@components/Work';
+import Contact from '@components/Contact';
 
 export const HomePage = () => {
   const { targetRef: aboutRef, scrollIntoView: scrollToAbout } = useScrollIntoView({ offset: 60 });
@@ -14,12 +15,15 @@ export const HomePage = () => {
   const { targetRef: workRef, scrollIntoView: scrollToWork } = useScrollIntoView({
     offset: 60,
   });
+  const { targetRef: contactRef, scrollIntoView: scrollContact } = useScrollIntoView({
+    offset: 60,
+  });
 
   const links = [
     { link: '#about-me', label: 'About Me', scrollFunction: scrollToAbout },
     { link: '#experience', label: 'Experience', scrollFunction: scrollToExperience },
     { link: '#Work', label: 'Work', scrollFunction: scrollToWork },
-    // { link: '#contact', label: 'Contact', scrollFunction: () => {} },
+    { link: '#contact', label: 'Contact', scrollFunction: scrollContact },
   ];
 
   return (
@@ -30,6 +34,7 @@ export const HomePage = () => {
         <AboutMe aboutRef={aboutRef} />
         <Experience experienceRef={experienceRef} />
         <Work workRef={workRef} />
+        <Contact contactRef={contactRef} />
       </Container>
     </main>
   );
