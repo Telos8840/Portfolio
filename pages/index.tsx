@@ -4,17 +4,21 @@ import Navigation from '@components/Navigation';
 import Hero from '@components/Hero';
 import AboutMe from '@components/AboutMe';
 import Experience from '@components/Experience';
+import Work from '@components/Work';
 
 export const HomePage = () => {
   const { targetRef: aboutRef, scrollIntoView: scrollToAbout } = useScrollIntoView({ offset: 60 });
   const { targetRef: experienceRef, scrollIntoView: scrollToExperience } = useScrollIntoView({
     offset: 60,
   });
+  const { targetRef: workRef, scrollIntoView: scrollToWork } = useScrollIntoView({
+    offset: 60,
+  });
 
   const links = [
     { link: '#about-me', label: 'About Me', scrollFunction: scrollToAbout },
     { link: '#experience', label: 'Experience', scrollFunction: scrollToExperience },
-    // { link: '#projects', label: 'Projects', scrollFunction: () => {} },
+    { link: '#Work', label: 'Work', scrollFunction: scrollToWork },
     // { link: '#contact', label: 'Contact', scrollFunction: () => {} },
   ];
 
@@ -25,6 +29,7 @@ export const HomePage = () => {
       <Container>
         <AboutMe aboutRef={aboutRef} />
         <Experience experienceRef={experienceRef} />
+        <Work workRef={workRef} />
       </Container>
     </main>
   );

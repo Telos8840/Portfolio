@@ -2,15 +2,17 @@
   "experience": [
     {
       "company": "FX Networks",
-      "title": "Senior Software Engineer",
+      "title": "Lead Software Engineer",
       "isDWS": true,
       "website": "https://www.fxnetworks.com/",
       "startDate": "July 2021",
       "endDate": "Present",
       "highlights": [
         "Architected the redesign of the new site and CMS using NextJS, TypeScript, Styled-Components, Material UI, Akamai Amp Video Player, and GraphQL",
-        "Led the team in developing all new high-performant and reusable components using the Atomic Design methodology",
+        "Lead the team in developing all new high-performant and reusable components using the Atomic Design methodology",
+        "Communicating with clients, colleagues, and other stakeholders throughout the project lifecycle to identify problems or issues and ensure they are resolved",
         "Created sleek intuitive UI translated from product specifications and Figma designs",
+        "Conducted code reviews to ensure that new code is error-free and conforms to established standards",
         "Noteworthy achievements: Infinite Scrolling Homepage Carousel and Music Player that were developed from the ground up",
         "Managed release deployments every week and maintained all environments by implementing pre-commit hooks to run typechecks and linting while also integrating with GitHub Workflows to run unit tests on Pull Request creation",
         "Created unit and E2E tests using React Testing Library, Jest, and Cypress"

@@ -2,8 +2,7 @@ import { createStyles, Stack } from '@mantine/core';
 import styled from '@emotion/styled';
 
 export const ExperienceContainer = styled('section')`
-  margin-top: 100px;
-  padding-bottom: 100px;
+  margin: 100px auto;
 
   button[data-active='true'] {
     background-color: rgba(24, 100, 171, 0.25);
