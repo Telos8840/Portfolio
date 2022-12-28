@@ -74,7 +74,7 @@ export const Experience = ({ experienceRef }: ExperienceProps) => {
                   size="sm"
                   center
                   mt="md"
-                  icon={<IconChevronsRight stroke={1.5} size={16} />}
+                  icon={<IconChevronsRight stroke={1.5} size={16} color={theme.colors.blue[5]} />}
                 >
                   {job.highlights.map((highlight) => (
                     <List.Item key={highlight}>{highlight}</List.Item>

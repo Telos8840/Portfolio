@@ -21,7 +21,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             with all the latest tech. This inquisitiveness has fueled my passion for Software over
             the past ${getNumOfYears()} years.`;
 
-  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
+  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled Components', 'GraphQL', 'Mantine'];
 
   return (
     <AboutMeContainer id="about-me" ref={aboutRef}>
