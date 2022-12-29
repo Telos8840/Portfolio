@@ -6,6 +6,7 @@ import AboutMe from '@components/AboutMe';
 import Experience from '@components/Experience';
 import Work from '@components/Work';
 import Contact from '@components/Contact';
+import Footer from '@components/Footer';
 
 export const HomePage = () => {
   const { targetRef: aboutRef, scrollIntoView: scrollToAbout } = useScrollIntoView({ offset: 60 });
@@ -36,8 +37,15 @@ export const HomePage = () => {
         <Work workRef={workRef} />
         <Contact contactRef={contactRef} />
       </Container>
+      <Footer />
     </main>
   );
 };
 
 export default HomePage;
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
