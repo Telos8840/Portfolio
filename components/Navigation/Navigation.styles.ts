@@ -72,7 +72,7 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
     color: theme.colors.dark[0],
-    fontSize: theme.fontSizes.lg,
+    fontSize: theme.fontSizes.xl,
     fontWeight: 500,
 
     '&:hover': {

@@ -51,7 +51,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             }}
             transition={{
               duration: 1.2,
-              delay: 0.5,
+              delay: 0.2,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
