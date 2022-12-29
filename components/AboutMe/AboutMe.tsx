@@ -34,6 +34,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             }}
             transition={{
               duration: 1.2,
+              delay: 0.2,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -50,6 +51,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             }}
             transition={{
               duration: 1.2,
+              delay: 0.5,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -76,7 +78,11 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
               <Link href="https://www.fxnetworks.com" target="_blank" rel="noopener">
                 FX Networks
               </Link>
-              website.
+              website and volunteering to port the WordPress version of
+              <Link href="https://accessibility.day/" target="_blank" rel="noopener">
+                GAAD
+              </Link>
+              to use NextJS with a custom Sanity CMS.
             </Text>
             <Text size="lg" mt="sm">
               These a few things I&apos;ve been enjoying working with lately:
@@ -85,7 +91,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
               {frameworks.map((framework) => (
                 <Group key={framework} noWrap spacing={5}>
                   <IconChevronsRight stroke={1.5} size={16} color={theme.colors.lime[6]} />
-                  <Text size="sm">{framework}</Text>
+                  <Text size="md">{framework}</Text>
                 </Group>
               ))}
             </TechGrid>
