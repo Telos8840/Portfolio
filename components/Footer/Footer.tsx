@@ -21,7 +21,12 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <ImageContainer>
-            <Image radius="xl" src="./images/misty.jpg" alt="Misty" caption="In Memory of Misty" />
+            <Image
+              radius="xl"
+              src="./images/misty.jpg"
+              alt="Misty"
+              caption="In loving memory of one of my life companions and friend, Misty."
+            />
           </ImageContainer>
         </motion.div>
       </Container>
