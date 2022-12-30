@@ -21,7 +21,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             with all the latest tech. This inquisitiveness has fueled my passion for Software over
             the past ${getNumOfYears()} years.`;
 
-  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled-Components', 'GraphQL', 'Mantine'];
+  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled Components', 'GraphQL', 'Mantine'];
 
   return (
     <AboutMeContainer id="about-me" ref={aboutRef}>
@@ -34,6 +34,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             }}
             transition={{
               duration: 1.2,
+              delay: 0.2,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -50,6 +51,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             }}
             transition={{
               duration: 1.2,
+              delay: 0.2,
             }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -65,27 +67,31 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
               </Text>
             </Title>
             <Divider my="sm" size="sm" />
-            <Text size="lg">{aboutMeText}</Text>
-            <Text size="lg" mt="sm">
+            <Text size="md">{aboutMeText}</Text>
+            <Text size="md" mt="sm">
               I&apos;ve worked on many projects ranging from small start-ups, to volunteering for
               non-profits, all the way through large consumer facing applications for major sports,
               news, and entertainment companies.
             </Text>
-            <Text size="lg" mt="sm">
+            <Text size="md" mt="sm">
               At the moment, I&apos;m leading the re-architectured redesign of the
               <Link href="https://www.fxnetworks.com" target="_blank" rel="noopener">
                 FX Networks
               </Link>
-              website.
+              website and volunteering to port the WordPress version of
+              <Link href="https://accessibility.day/" target="_blank" rel="noopener">
+                GAAD
+              </Link>
+              to use NextJS with a custom Sanity CMS.
             </Text>
-            <Text size="lg" mt="sm">
+            <Text size="md" mt="sm">
               These a few things I&apos;ve been enjoying working with lately:
             </Text>
             <TechGrid cols={2} spacing="xs">
               {frameworks.map((framework) => (
                 <Group key={framework} noWrap spacing={5}>
                   <IconChevronsRight stroke={1.5} size={16} color={theme.colors.lime[6]} />
-                  <Text size="sm">{framework}</Text>
+                  <Text size="md">{framework}</Text>
                 </Group>
               ))}
             </TechGrid>

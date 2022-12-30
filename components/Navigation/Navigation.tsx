@@ -83,6 +83,7 @@ const Navigation = ({ links }: NavigationProps) => {
           }}
           transition={{
             duration: 1.2,
+            delay: 1.5,
           }}
         >
           <LinkContainer spacing={5}>{items}</LinkContainer>
@@ -101,9 +102,10 @@ const Navigation = ({ links }: NavigationProps) => {
           }}
           transition={{
             duration: 1.2,
+            delay: 1.5,
           }}
         >
-          <SocialContainer spacing={0} position="right" noWrap>
+          <SocialContainer spacing={5} position="right" noWrap>
             <ActionIcon
               component="a"
               href="https://www.linkedin.com/in/seguardado/"
@@ -111,7 +113,7 @@ const Navigation = ({ links }: NavigationProps) => {
               rel="noopener"
               size="lg"
             >
-              <IconBrandLinkedin size={24} stroke={1.5} />
+              <IconBrandLinkedin size={28} stroke={1.5} />
             </ActionIcon>
             <ActionIcon
               component="a"
@@ -120,7 +122,7 @@ const Navigation = ({ links }: NavigationProps) => {
               rel="noopener"
               size="lg"
             >
-              <IconBrandGithub size={24} stroke={1.5} />
+              <IconBrandGithub size={28} stroke={1.5} />
             </ActionIcon>
           </SocialContainer>
         </motion.div>

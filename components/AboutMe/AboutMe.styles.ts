@@ -2,9 +2,9 @@ import { Anchor, AnchorProps, createStyles, SimpleGrid } from '@mantine/core';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-export const AboutMeContainer = styled.section`
+export const AboutMeContainer = styled.article`
   overflow: hidden;
-  margin: 100px auto;
+  margin: 0 auto 100px auto;
 `;
 
 interface LinkProps extends AnchorProps {

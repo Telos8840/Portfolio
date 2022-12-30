@@ -1,0 +1,46 @@
+{
+  "work": [
+    {
+      "title": "FX Networks",
+      "image": "./images/fx-networks.png",
+      "link": "https://www.fxnetworks.com/",
+      "description": "A total redesign of the FX Networks website built from the ground up using the latest tech. I was responsible primarily for the front-end development but also worked closely with the product and client teams to ensure the site was built to spec.",
+      "badges": ["NextJS", "TypeScript", "Material UI", "Styled Components", "GraphQL", "Mongoose"]
+    },
+    {
+      "title": "Fox / Fox Sports",
+      "image": "./images/fox.png",
+      "link": "https://www.fox.com/",
+      "description": "I was responsible for the front-end development that integrated cable providers to allow users to login, watch, and favorite content. I also worked on the payment gateway and built the Apple Pay integration that allowed users to subscribe to content.",
+      "badges": ["React", "Redux", "PostCSS", "Express", "Apple Pay", "HTTP Live Streaming"]
+    },
+    {
+      "title": "GAAD Foundation",
+      "image": "./images/gaad.png",
+      "link": "https://accessibility.day/",
+      "description": "I am currently volunteering and mentoring other junior volunteers on a redesign of the GAAD Foundation site. This is being ported over from WordPress to NextJS using the Mantine component library with a custom built CMS using Sanity.",
+      "badges": ["NextJS", "TypeScript", "Mantine", "Styled Components", "Sanity CMS"]
+    },
+    {
+      "title": "Collide",
+      "image": "./images/collide.png",
+      "link": "https://www.collide.com/",
+      "description": "Collide is a platform that allows users to create and share interactive experiences. I was one of the first engineers on the team and helped build the initial version of the platform, which included live chat, video streaming, and user payments.",
+      "badges": ["React", "Redux Saga", "Express", "Node", "HTTP Live Streaming"]
+    },
+    {
+      "title": "LegalZoom",
+      "image": "./images/legal-zoom.png",
+      "link": "https://www.legalzoom.com/",
+      "description": "I lead the team in developing rapid prototypes for new features and products to test market viability. After evaluating what technologies worked the best, I built a command line utility tool to quickly scaffold new projects with minimum setup.",
+      "badges": ["React", "Redux", "HandlebarsJS", "Express", "Node", "MongoDB", "Stripe"]
+    },
+    {
+      "title": "ScoreBig",
+      "image": "./images/scorebig.png",
+      "link": "https://www.scorebig.com/",
+      "description": "ScoreBig is a platform that allows users to purchase tickets to events at a discount. I worked as a full-stack engineer developing new features and maintaining the existing codebase. I also worked on the internal tools used by the dev team.",
+      "badges": ["C#", ".NET", "Razor", "AngularJS", "SQL Server", "PhantomJS"]
+    }
+  ]
+}

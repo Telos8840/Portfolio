@@ -1,16 +1,26 @@
-import { Container, Title, Text, Stack, Code } from '@mantine/core';
+import { useEffect, useState } from 'react';
+import { Container, Title, Text, Stack, Code, Button } from '@mantine/core';
+import { useScrollLock, useTimeout } from '@mantine/hooks';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import useStyles from './Hero.styles';
-
-// TODO: Animate colors rendering down
-// TODO: transition nav header
+import { motion } from 'framer-motion';
+import useStyles, { HeroContainer } from './Hero.styles';
 
 export const Hero = () => {
   const { classes } = useStyles();
+  const [startAnimation, setStartAnimation] = useState<boolean>(false);
+  const { start, clear } = useTimeout(() => setStartAnimation(true), 100);
+
+  useEffect(() => {
+    start();
+
+    return () => {
+      clear();
+    };
+  }, []);
 
   const [text] = useTypewriter({
     words: [
-      'Senior Software Engineer',
+      'Lead Software Engineer',
       'Full Stack Developer',
       'React Expert',
       'Mentor',
@@ -25,9 +35,21 @@ export const Hero = () => {
   });
 
   return (
-    <section className={classes.root}>
+    <HeroContainer className={startAnimation ? 'animate' : ''}>
       <Container size="lg" className={classes.container}>
-        <div className={classes.inner}>
+        <motion.div
+          className={classes.inner}
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1.2,
+            delay: 1.2,
+          }}
+        >
           <Stack className={classes.content} align="flex-start" justify="flex-start" spacing="md">
             <Title className={classes.title} order={1}>
               Hi there! My name is
@@ -47,8 +69,8 @@ export const Hero = () => {
               <Cursor />
             </Code>
           </Stack>
-        </div>
+        </motion.div>
       </Container>
-    </section>
+    </HeroContainer>
   );
 };
