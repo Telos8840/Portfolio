@@ -9,7 +9,18 @@ export default function App(props: AppProps) {
   return (
     <>
       <Seo />
-      <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles withNormalizeCSS>
+      <MantineProvider
+        theme={{
+          colorScheme: 'dark',
+          globalStyles: () => ({
+            body: {
+              backgroundColor: '#020202',
+            },
+          }),
+        }}
+        withGlobalStyles
+        withNormalizeCSS
+      >
         <NotificationsProvider>
           <Component {...pageProps} />
         </NotificationsProvider>

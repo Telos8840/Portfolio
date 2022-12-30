@@ -48,7 +48,7 @@ export const Contact = ({ contactRef }: ContactProps) => {
           viewport={{ once: true }}
         >
           <Stack align="center" spacing="xl">
-            <Text fz="xl" ta="center" className={classes.text}>
+            <Text size="md" ta="center" className={classes.text}>
               Although I&apos;m not actively looking for any new opportunities at the moment,
               I&apos;m always open to discussing new project ideas, potential freelancing, or
               trading music recommendations. If you have any questions or just want to say hi, feel

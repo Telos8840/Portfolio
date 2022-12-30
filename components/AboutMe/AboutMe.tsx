@@ -67,13 +67,13 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
               </Text>
             </Title>
             <Divider my="sm" size="sm" />
-            <Text size="lg">{aboutMeText}</Text>
-            <Text size="lg" mt="sm">
+            <Text size="md">{aboutMeText}</Text>
+            <Text size="md" mt="sm">
               I&apos;ve worked on many projects ranging from small start-ups, to volunteering for
               non-profits, all the way through large consumer facing applications for major sports,
               news, and entertainment companies.
             </Text>
-            <Text size="lg" mt="sm">
+            <Text size="md" mt="sm">
               At the moment, I&apos;m leading the re-architectured redesign of the
               <Link href="https://www.fxnetworks.com" target="_blank" rel="noopener">
                 FX Networks
@@ -84,7 +84,7 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
               </Link>
               to use NextJS with a custom Sanity CMS.
             </Text>
-            <Text size="lg" mt="sm">
+            <Text size="md" mt="sm">
               These a few things I&apos;ve been enjoying working with lately:
             </Text>
             <TechGrid cols={2} spacing="xs">

@@ -83,6 +83,7 @@ const Navigation = ({ links }: NavigationProps) => {
           }}
           transition={{
             duration: 1.2,
+            delay: 1.5,
           }}
         >
           <LinkContainer spacing={5}>{items}</LinkContainer>
@@ -101,6 +102,7 @@ const Navigation = ({ links }: NavigationProps) => {
           }}
           transition={{
             duration: 1.2,
+            delay: 1.5,
           }}
         >
           <SocialContainer spacing={5} position="right" noWrap>
