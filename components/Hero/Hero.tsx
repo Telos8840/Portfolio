@@ -20,7 +20,7 @@ export const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
-      'Senior Software Engineer',
+      'Lead Software Engineer',
       'Full Stack Developer',
       'React Expert',
       'Mentor',

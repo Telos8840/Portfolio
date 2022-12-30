@@ -31,7 +31,7 @@ const WorkCard = ({ image, title, link, description, badges }: WorkCardProps) =>
       onPointerDown={() => setCursorDown(true)}
       onPointerUp={() => setCursorDown(false)}
     >
-      <Card.Section>
+      <Card.Section className={title.includes('GAAD') ? classes.gaad : ''}>
         <Image src={image} alt={title} fit="fill" />
       </Card.Section>
 

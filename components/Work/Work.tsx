@@ -74,18 +74,18 @@ export const Work = ({ workRef }: WorkProps) => {
         </Title>
         <Divider my="sm" size="sm" />
         <Carousel
-          className={classes.carousel}
+          classNames={classes}
           slideSize="50%"
           align="start"
           slideGap="xl"
           controlsOffset="xs"
-          withControls={false}
           getEmblaApi={setEmbla}
           dragFree
           breakpoints={[
             { maxWidth: 'md', slideSize: '60%' },
             { maxWidth: 'sm', slideSize: '100%' },
           ]}
+          styles={{}}
         >
           {slides}
         </Carousel>
