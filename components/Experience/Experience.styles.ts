@@ -1,7 +1,7 @@
 import { createStyles, Stack } from '@mantine/core';
 import styled from '@emotion/styled';
 
-export const ExperienceContainer = styled('section')`
+export const ExperienceContainer = styled.article`
   margin: 100px auto;
 
   button[data-active='true'] {

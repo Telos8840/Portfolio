@@ -49,7 +49,7 @@ export const Work = ({ workRef }: WorkProps) => {
   }, [embla]);
 
   return (
-    <WorkContainer id="Work" ref={workRef}>
+    <WorkContainer id="work" ref={workRef}>
       <motion.div
         initial={{
           y: -100,
@@ -57,6 +57,7 @@ export const Work = ({ workRef }: WorkProps) => {
         }}
         transition={{
           duration: 1.0,
+          delay: 0.3,
         }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

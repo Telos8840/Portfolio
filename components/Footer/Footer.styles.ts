@@ -5,17 +5,11 @@ export const ImageContainer = styled.div`
   width: 350px;
 `;
 
-export const AboutMeContainer = styled.section`
-  overflow: hidden;
-  margin: 100px auto;
-`;
-
 const useStyles = createStyles((theme) => ({
   footer: {
     overflow: 'hidden',
-    marginTop: 120,
-    paddingTop: theme.spacing.xl * 2,
-    paddingBottom: theme.spacing.xl * 2,
+    paddingTop: theme.spacing.xl * 4,
+    paddingBottom: theme.spacing.xl * 4,
     backgroundColor: theme.colors.dark[9],
   },
 

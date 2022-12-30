@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { createStyles } from '@mantine/core';
 
-export const ContactContainer = styled.section`
+export const ContactContainer = styled.article`
   overflow: hidden;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   padding-left: 16px;
   padding-right: 16px;
   max-width: 720px;

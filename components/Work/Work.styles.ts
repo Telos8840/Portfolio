@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { createStyles } from '@mantine/core';
 
-export const WorkContainer = styled.section`
+export const WorkContainer = styled.article`
   overflow: hidden;
   margin: 100px auto;
 `;
