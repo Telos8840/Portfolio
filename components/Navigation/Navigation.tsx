@@ -59,17 +59,6 @@ const Navigation = ({ links }: NavigationProps) => {
   return (
     <NavHeader className={navScrolled ? 'scrolled' : ''} height={56} fixed>
       <InnerContainer size="lg">
-        <Hamburger opened={opened} onClick={toggle} size="sm" />
-        <Drawer
-          opened={opened}
-          onClose={() => toggle()}
-          overlayOpacity={0.55}
-          overlayBlur={3}
-          padding="sm"
-          size="sm"
-        >
-          <MobileLinkContainer spacing={5}>{items}</MobileLinkContainer>
-        </Drawer>
         <motion.div
           initial={{
             x: -500,
@@ -86,6 +75,18 @@ const Navigation = ({ links }: NavigationProps) => {
             delay: 1.5,
           }}
         >
+          <Hamburger opened={opened} onClick={toggle} size="sm" />
+          <Drawer
+            opened={opened}
+            onClose={() => toggle()}
+            overlayOpacity={0.55}
+            overlayBlur={3}
+            padding="sm"
+            size="sm"
+          >
+            <MobileLinkContainer spacing={5}>{items}</MobileLinkContainer>
+          </Drawer>
+
           <LinkContainer spacing={5}>{items}</LinkContainer>
         </motion.div>
 
