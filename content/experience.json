@@ -3,25 +3,45 @@
     {
       "company": "FX Networks",
       "title": "Lead Software Engineer",
-      "isDWS": true,
       "website": "https://www.fxnetworks.com/",
       "startDate": "July 2021",
       "endDate": "Present",
       "highlights": [
         "Architected the redesign of the new site and CMS using NextJS, TypeScript, Styled-Components, Material UI, Akamai Amp Video Player, and GraphQL",
         "Lead the team in developing all new high-performant and reusable components using the Atomic Design methodology",
+        "Implemented best practices for code maintainability, scalability, and security in architectural choices",
         "Communicating with clients, colleagues, and other stakeholders throughout the project lifecycle to identify problems or issues and ensure they are resolved",
         "Created sleek intuitive UI translated from product specifications and Figma designs",
+        "Proficient in integrating and customizing video players to enhance multimedia experiences within web applications",
         "Conducted code reviews to ensure that new code is error-free and conforms to established standards",
         "Noteworthy achievements: Infinite Scrolling Homepage Carousel and Music Player that were developed from the ground up",
-        "Managed release deployments every week and maintained all environments by implementing pre-commit hooks to run typechecks and linting while also integrating with GitHub Workflows to run unit tests on Pull Request creation",
-        "Created unit and E2E tests using React Testing Library, Jest, and Cypress"
+        "Implemented CI/CD pipelines to automate deployment processes, improving efficiency and reliability by integrating pre-commit hooks and GitHub Workflows",
+        "Created unit and E2E tests using React Testing Library, Jest, and Cypress",
+        "Led a team of developers, conducting regular one-on-one meetings to provide guidance, address concerns, and foster professional growth"
+      ]
+    },
+    {
+      "company": "GAAD (Global Accessibility Awareness Day)",
+      "title": "Principal Software Engineer",
+      "website": "https://gaad.foundation/",
+      "startDate": "October 2022",
+      "endDate": "Present",
+      "highlights": [
+        "Played a pivotal role in making architectural decisions that prioritize web accessibility, ensuring that accessibility considerations are integrated into the core of the application, making digital content inclusive and usable for all users",
+        "Providing technical leadership, mentoring junior engineers, fostering their growth, and guiding the team to successful project delivery",
+        "Enforced coding standards and best practices across the development team, ensuring clean, maintainable, and efficient code",
+        "Leveraged Next.js to build high-performance, server-rendered web applications, ensuring fast load times and seamless user experiences",
+        "Employed TypeScript for type safety, code quality, and maintainability throughout the development lifecycle",
+        "Integrated tRPC for streamlined API communication, reducing code complexity and improving development efficiency",
+        "Designed and maintained complex data models using Prisma, optimizing database interactions and preserving data integrity",
+        "Developed visually appealing, user-friendly, and accessible custom UI using Mantine components",
+        "Designing a fully custom backend CMS, empowering content editors to efficiently manage website content and users",
+        "Implemented NextAuth for secure user authentication and authorization, enhancing data protection and access control"
       ]
     },
     {
       "company": "Fox",
       "title": "Senior Software Engineer",
-      "isDWS": true,
       "website": "https://www.fox.com/",
       "startDate": "November 2017",
       "endDate": "July 2021",
@@ -36,7 +56,6 @@
     {
       "company": "Collide",
       "title": "Lead Full-Stack Engineer",
-      "isDWS": false,
       "website": "https://www.collide.com/",
       "startDate": "March 2017",
       "endDate": "October 2017",
@@ -50,7 +69,6 @@
     {
       "company": "LegalZoom",
       "title": "Lead Full-Stack Engineer",
-      "isDWS": false,
       "website": "https://www.legalzoom.com/",
       "startDate": "July 2016",
       "endDate": "March 2017",
@@ -63,7 +81,6 @@
     {
       "company": "ScoreBig",
       "title": "Software Engineer III",
-      "isDWS": false,
       "website": "https://www.scorebig.com/",
       "startDate": "July 2016",
       "endDate": "March 2017",
@@ -77,7 +94,6 @@
     {
       "company": "Internet Brands",
       "title": "Software Engineer",
-      "isDWS": false,
       "website": "https://www.internetbrands.com/",
       "startDate": "November 2014",
       "endDate": "February 2015",
@@ -90,7 +106,6 @@
     {
       "company": "Reality Check Systems",
       "title": "Software Engineer",
-      "isDWS": false,
       "website": "https://www.realitychecksystems.com/",
       "startDate": "March 2013",
       "endDate": "September 2014",

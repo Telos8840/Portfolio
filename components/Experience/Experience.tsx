@@ -2,8 +2,8 @@ import { MutableRefObject } from 'react';
 import { useMantineTheme, Divider, Text, Title, Tabs, List } from '@mantine/core';
 import { IconChevronsRight } from '@tabler/icons';
 import { motion } from 'framer-motion';
-import data from '@content/experience.json';
 import { useMediaQuery } from '@mantine/hooks';
+import data from '@/content/experience.json';
 import useStyles, { ExperienceContainer, Panel } from './Experience.styles';
 
 interface ExperienceProps {
@@ -62,11 +62,6 @@ export const Experience = ({ experienceRef }: ExperienceProps) => {
                 <Title order={3} color="blue.5">
                   {job.title}
                 </Title>
-                {job.isDWS && (
-                  <Text color="dimmed" component="p" m={0}>
-                    Contracted through Diamond Web Services
-                  </Text>
-                )}
                 <Text fz="lg" component="p" m={0}>
                   {job.startDate} - {job.endDate}
                 </Text>

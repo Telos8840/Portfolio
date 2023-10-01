@@ -1,13 +1,13 @@
 import { Container, ContainerProps, createPolymorphicComponent } from '@mantine/core';
 import { useScrollIntoView } from '@mantine/hooks';
-import Navigation from '@components/Navigation';
-import Hero from '@components/Hero';
-import AboutMe from '@components/AboutMe';
-import Experience from '@components/Experience';
-import Work from '@components/Work';
-import Contact from '@components/Contact';
-import Footer from '@components/Footer';
 import styled from '@emotion/styled';
+import Navigation from '@/components/Navigation';
+import Hero from '@/components/Hero';
+import AboutMe from '@/components/AboutMe';
+import Experience from '@/components/Experience';
+import Work from '@/components/Work';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 interface SectionContainerProps extends ContainerProps {
   component: string;

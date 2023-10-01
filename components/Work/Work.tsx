@@ -1,8 +1,8 @@
 import { MutableRefObject, useCallback, useEffect, useState } from 'react';
 import { Carousel, Embla } from '@mantine/carousel';
 import { Divider, Progress, Text, Title } from '@mantine/core';
-import data from '@content/work.json';
 import { motion } from 'framer-motion';
+import data from '@/content/work.json';
 import WorkCard from './WorkCard';
 import useStyles, { WorkContainer } from './Work.styles';
 

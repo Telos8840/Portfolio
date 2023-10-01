@@ -16,12 +16,14 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
     return date2.getFullYear() - date1.getFullYear();
   };
 
-  const aboutMeText = `I've been a curiosity-driven person since childhood and always wanted to learn how
-            things work. To this day, I still enjoy learning about new topics and keeping up to date
-            with all the latest tech. This inquisitiveness has fueled my passion for Software over
-            the past ${getNumOfYears()} years.`;
+  const aboutMeText = `As a seasoned Software Engineer with ${getNumOfYears()} years of experience, 
+  I excel in harnessing cutting-edge technologies to create exceptional web experiences. My expertise in Full-Stack
+   development has enabled me to lead teams in crafting high-performant, server-rendered web applications known for 
+   their accessibility and visually appealing UIs. I'm passionate about enforcing coding standards, conducting rigorous 
+   code reviews, mentorship, and making pivotal architectural decisions to maintain scalable, maintainable, and 
+   efficient codebases.`;
 
-  const frameworks = ['NextJS', 'React', 'TypeScript', 'Styled Components', 'GraphQL', 'Mantine'];
+  const frameworks = ['NextJS', 'React', 'TypeScript', 'tRPC', 'GraphQL', 'Prisma'];
 
   return (
     <AboutMeContainer id="about-me" ref={aboutRef}>
@@ -69,20 +71,20 @@ export const AboutMe = ({ aboutRef }: AboutMeProps) => {
             <Divider my="sm" size="sm" />
             <Text size="md">{aboutMeText}</Text>
             <Text size="md" mt="sm">
-              I&apos;ve worked on many projects ranging from small start-ups, to volunteering for
-              non-profits, all the way through large consumer facing applications for major sports,
-              news, and entertainment companies.
+              I&apos;ve worked on many projects ranging from small start-ups, to non-profits, all
+              the way through large consumer facing applications for major sports, news, and
+              entertainment companies.
             </Text>
             <Text size="md" mt="sm">
               At the moment, I&apos;m leading the re-architectured redesign of the
               <Link href="https://www.fxnetworks.com" target="_blank" rel="noopener">
                 FX Networks
               </Link>
-              website and volunteering to port the WordPress version of
-              <Link href="https://accessibility.day/" target="_blank" rel="noopener">
+              website and providing technical leadership for the revamped
+              <Link href="https://gaad.foundation/" target="_blank" rel="noopener">
                 GAAD
               </Link>
-              to use NextJS with a custom Sanity CMS.
+              websites using bleeding-edge tech.
             </Text>
             <Text size="md" mt="sm">
               These a few things I&apos;ve been enjoying working with lately:
