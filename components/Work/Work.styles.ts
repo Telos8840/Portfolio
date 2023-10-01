@@ -39,25 +39,17 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     },
 
     [theme.fn.largerThan('lg')]: {
-      height: 530,
+      height: 550,
     },
   },
 
-  gaad: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-    minHeight: 237,
-    padding: `0 ${theme.spacing.md}px`,
+  image: {
+    img: {
+      minHeight: 232,
 
-    [theme.fn.largerThan('sm')]: {
-      minHeight: 270,
-    },
-
-    [theme.fn.largerThan('lg')]: {
-      minHeight: 287,
+      [theme.fn.largerThan('sm')]: {
+        minHeight: 287,
+      },
     },
   },
 

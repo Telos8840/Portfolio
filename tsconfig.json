@@ -3,8 +3,8 @@
     "target": "es5",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@content/*": ["content/*"],
+      "@/components/*": ["components/*"],
+      "@/content/*": ["content/*"],
     },
     "lib": [
       "dom",

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Container, Title, Text, Stack, Code, Button } from '@mantine/core';
-import { useScrollLock, useTimeout } from '@mantine/hooks';
+import { Container, Title, Text, Stack, Code } from '@mantine/core';
+import { useTimeout } from '@mantine/hooks';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import useStyles, { HeroContainer } from './Hero.styles';
@@ -20,9 +20,12 @@ export const Hero = () => {
 
   const [text] = useTypewriter({
     words: [
+      'Principal Software Engineer',
       'Lead Software Engineer',
       'Full Stack Developer',
+      'NextJS Fanatic',
       'React Expert',
+      'TypeScript Enthusiast',
       'Mentor',
       'Metalhead',
       'Guitar Shredder',

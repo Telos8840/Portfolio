@@ -4,8 +4,15 @@
       "title": "FX Networks",
       "image": "./images/fx-networks.png",
       "link": "https://www.fxnetworks.com/",
-      "description": "A total redesign of the FX Networks website built from the ground up using the latest tech. I was responsible primarily for the front-end development but also worked closely with the product and client teams to ensure the site was built to spec.",
+      "description": "A total redesign of the FX Networks website built from the ground up using some of the latest tech. I was responsible primarily for the front-end development but also worked closely with the product and client teams to ensure the site was built to spec.",
       "badges": ["NextJS", "TypeScript", "Material UI", "Styled Components", "GraphQL", "Mongoose"]
+    },
+    {
+      "title": "GAAD Foundation",
+      "image": "./images/gaad.png",
+      "link": "https://gaad.foundation/",
+      "description": "I am currently working on porting two GAAD websites over from WordPress to NextJS with TypeScript, tRPC, Prisma, NextAuth, and Mantine. I'm leading the team in developing a re-architected site following Atomic Design principles as well as creating a custom CMS to better serve our needs.",
+      "badges": ["NextJS", "TypeScript", "Mantine", "Styled Components", "tRPC", "Prisma", "NextAuth"]
     },
     {
       "title": "Fox / Fox Sports",
@@ -13,13 +20,6 @@
       "link": "https://www.fox.com/",
       "description": "I was responsible for the front-end development that integrated cable providers to allow users to login, watch, and favorite content. I also worked on the payment gateway and built the Apple Pay integration that allowed users to subscribe to content.",
       "badges": ["React", "Redux", "PostCSS", "Express", "Apple Pay", "HTTP Live Streaming"]
-    },
-    {
-      "title": "GAAD Foundation",
-      "image": "./images/gaad.png",
-      "link": "https://accessibility.day/",
-      "description": "I am currently volunteering and mentoring other junior volunteers on a redesign of the GAAD Foundation site. This is being ported over from WordPress to NextJS using the Mantine component library with a custom built CMS using Sanity.",
-      "badges": ["NextJS", "TypeScript", "Mantine", "Styled Components", "Sanity CMS"]
     },
     {
       "title": "Collide",

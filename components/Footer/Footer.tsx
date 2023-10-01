@@ -15,7 +15,7 @@ export function Footer() {
           }}
           transition={{
             duration: 1.2,
-            delay: 1,
+            delay: 0.5,
           }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
