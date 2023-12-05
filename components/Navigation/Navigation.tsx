@@ -11,6 +11,7 @@ import useStyles, {
   SocialContainer,
   MobileLinkContainer,
 } from './Navigation.styles';
+import { usePostHog } from 'posthog-js/react';
 
 interface LinkProps {
   link: string;
@@ -23,6 +24,7 @@ interface NavigationProps {
 }
 
 const Navigation = ({ links }: NavigationProps) => {
+  const posthog = usePostHog();
   const [opened, { toggle }] = useDisclosure(false);
   const [scroll] = useWindowScroll();
   const [active, setActive] = useState<string>('');
@@ -44,6 +46,7 @@ const Navigation = ({ links }: NavigationProps) => {
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault();
+        posthog?.capture(`${link.label.split(' ').join('_').toLowerCase()}_clicked`);
         setActive(link.link);
         link.scrollFunction();
 
