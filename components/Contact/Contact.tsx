@@ -55,6 +55,7 @@ export const Contact = ({ contactRef }: ContactProps) => {
               free to email me.
             </Text>
             <Button
+              data-attr="autocapture-button"
               component="a"
               href="mailto:seguardado88@gmail.com"
               size="xl"
