@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Anchor, ActionIcon, Drawer } from '@mantine/core';
 import { useDebouncedState, useDisclosure, useWindowScroll } from '@mantine/hooks';
-import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons';
+import { IconBrandLinkedin, IconBrandGithub, IconFileDownload } from '@tabler/icons';
 import useStyles, {
   NavHeader,
   InnerContainer,
@@ -107,6 +107,15 @@ const Navigation = ({ links }: NavigationProps) => {
           }}
         >
           <SocialContainer spacing={5} position="right" noWrap>
+            <ActionIcon
+              component="a"
+              href="https://drive.google.com/file/d/1NYE_06FfJIVZApr5X7m51jKgEFX89iPg/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              size="lg"
+            >
+              <IconFileDownload size={28} stroke={1.5} />
+            </ActionIcon>
             <ActionIcon
               component="a"
               href="https://www.linkedin.com/in/seguardado/"
