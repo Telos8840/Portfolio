@@ -109,7 +109,7 @@ const Navigation = ({ links }: NavigationProps) => {
           <SocialContainer spacing={5} position="right" noWrap>
             <ActionIcon
               component="a"
-              href="https://drive.google.com/file/d/1NYE_06FfJIVZApr5X7m51jKgEFX89iPg/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CUkh0ykjTf2kIe-9CJ37ZttH_wJva5iZ/view?usp=sharing"
               target="_blank"
               rel="noopener"
               size="lg"
